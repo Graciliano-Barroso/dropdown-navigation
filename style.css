@@ -1,0 +1,12 @@
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+.caixa {
+    display: flex;
+}
+
+.nav-bar {
+    display: flex;
+    
+}
