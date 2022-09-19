@@ -17,23 +17,43 @@
 </head>
 <body>
   <header>
-    <div class="caixa">
-      <h1><a class="logo" href="#"><img src="./images/logo.svg" alt=""></a></h1>
-      <ul class="nav-bar">
-        <li class="features"><a href="#">Features<img src="./images/icon-arrow-down.svg"></a></li>
-          <ul>
-            <li><a href=""><img src="./images/icon-todo.svg" alt="dropdown list icon">Todo list</a></li>
-            <li><a href=""><img src="./images/icon-calendar.svg" alt="dropdown list icon">Calendar</a></li>
-            <li><a href=""><img src="./images/icon-reminders.svg" alt="dropdown list icon">Reminders</a></li>
-            <li><a href=""><img src="./images/icon-planning.svg" alt="dropdown list icon">Planning</a></li>
-          </ul>
-        <li class="Company"><a href="#">Company<img src="./images/icon-arrow-down.svg"></a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-      </ul>
-    </div>
+    <nav>
+      <h1><a class="logo" href="#"><img src="./images/logo.svg" alt="Logo of site"></a></h1>
+      <a href="#"><img src="./images/icon-menu.svg" alt="Menu"></a>
+      <div class="overlay">
+        <div class="mobile-nav">
+          <img src="./images/icon-close-menu.svg" alt="Close menu">
+          <div class="mobile-nav-con">
+            <div class="dropdown">
+              <div class="dropdown">
+                Features <img src="./images/icon-arrow-down.svg" alt="Icone Arrow down">
+              </div>
+              <div class="dropdown-content">
+                <a href="#"><img src="./images/icon-todo.svg" alt="Icone of todo list">Todo List</a>
+                <a href="#"><img src="./images/icon-calendar.svg" alt="Icone of calendar">Todo List</a>
+                <a href="#"><img src="./images/icon-reminders.svg" alt="Icone of calendar">Todo List</a>
+                <a href="#"><img src="./images/icon-planning.svg" alt="Icone of planning">Todo List</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown">
+                Company <img src="./images/icon-arrow-down.svg" alt="Icone of Arrow down">
+              </div>
+              <div class="dropdown-content">
+                <a href="#">Histry</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+            </div>         
+          </div>
+          <a href="#">Careers</a>
+          <a href="#">Abolt</a>
+        </div>
+      </div>
+    </nav>
+
+
+      
   </header>
   
   
@@ -45,9 +65,6 @@
 
   Learn more
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
 </body>
 </html>
