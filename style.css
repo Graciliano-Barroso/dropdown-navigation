@@ -17,6 +17,12 @@ body {
     outline: none;
     background-color: transparent;
     color: var(--Medium-Gray);
+    cursor: pointer;
+}
+
+.nav-btns button:nth-child(1):hover {
+    color: var(--Almost-Black);
+    font-weight: 600;
 }
 
 .nav-btns button:nth-child(2) {
@@ -26,6 +32,12 @@ body {
     border-radius: 10px;
     background-color: transparent;
     color: var(--Medium-Gray);
+    cursor: pointer;
+}
+
+.nav-btns button:nth-child(2):hover {
+    color: var(--Almost-Black);
+    font-weight: 600;
 }
 
 .nav-ul {
@@ -33,10 +45,7 @@ body {
     padding: 20px;
     display: flex;
     align-items: center;
-}
-
-.lock {
-    overflow: hidden;
+    cursor: pointer;
 }
 
 a {
@@ -44,6 +53,10 @@ a {
     color: var(--Medium-Gray);
     margin: 10px;
     display: inline;
+}
+
+.lock {
+    overflow: hidden;
 }
 
 .menu-img {
@@ -77,6 +90,7 @@ h1 {
 .p-desktop {
     font-size: 18px;
     color: var(--Medium-Gray);
+    line-height: 27px;
 }
 
 .hero {
@@ -100,7 +114,7 @@ h1 {
     margin-top: 110px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .hero-button {
@@ -108,18 +122,19 @@ h1 {
     border: none;
     outline: none;
     background-color: var(--Almost-Black);
-    color: #ffffff;
+    color: var(--Almost-White);
     padding: 15px 25px;
     border-radius: 10px;
     font-size: 15px;
+    font-weight: 700;
     transition: all 1s;
 }
 
 .hero-button:hover {
     background-color: transparent;
-    border: 1px solid black;
-    color: gray;
-    font-family: bold;
+    border: 1px solid var(--Almost-Black);
+    color: var(--Almost-Black);
+    font-weight: 700;
     cursor: pointer;
     transition: all 1s;
 }
@@ -131,13 +146,13 @@ h1 {
     color: var(--Medium-Gray);
 }
 
-.dropdown-content {
+.dropdown-content-features {
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 9px;
     display: none;
     position: absolute;
-    background: #ffffff;
+    background: var(--Almost-White);
     width: 130px;
     z-index: 2;
     box-shadow: 0px 8px 16px 0 var(--Medium-Gray);
@@ -146,23 +161,28 @@ h1 {
 
 .dropdown-content_company {
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 3px;
     display: none;
     position: absolute;
-    background: #ffffff;
-    width: 105px;
+    background: var(--Almost-White);
+    width: 107px;
     z-index: 2;
     box-shadow: 0px 8px 16px 0 var(--Medium-Gray);
     right: 5px;
 }
 
-.dropdown-content a {
+.dropdown-content-features a {
     color: var(--Medium-Gray);
     padding: 5px 6px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.dropdown-content-features a:hover {
+    color: var(--Almost-Black);
+    font-weight: 500;
 }
 
 .dropdown-content_company a {
@@ -173,20 +193,20 @@ h1 {
     justify-content: flex-start;
 }
 
-.dropdown-content img {
-    margin-right: 10px;
+.dropdown-content_company a:hover {
+    color: var(--Almost-Black);
+    font-weight: 500;
 }
 
-.dropdown-content a:hover {
-    opacity: 0.7;
-    background-color: #dddddd;
+.dropdown-content-features img {
+    margin-right: 10px;
 }
 
 .dropdown:hover .dropdown-content_company {
     display: block;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content-features {
     display: block;
 }
 
@@ -196,6 +216,10 @@ h1 {
     }
 
     #hero-img-mobile {
+        display: none;
+    }
+
+    .title-mobile {
         display: none;
     }
 }
@@ -208,12 +232,17 @@ h1 {
     #hero-img-mobile {
         display: none;
     }
+
+    .title-mobile {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 375px) {
 
     nav {
-        justify-content: space-around;
+        justify-content: space-between;
+        margin: 0 20px;
     }
 
     h1 {
@@ -228,17 +257,12 @@ h1 {
         display: none;
     }
 
-    nav {
-        display: flex;
-        justify-content: last baseline;
-    }
-
     .menu-img {
         display: block;
     }
 
     .hero {
-        grid-gap: 0;
+        display: block;
     }
 
     #hero-img {
@@ -267,14 +291,15 @@ h1 {
         margin: 0 20px;
         font-size: 16px;
         text-align: center;
+        line-height: 25px;
     }
 
     .hero-button {
-        margin: 80px 124px;
+        margin: 60px 121px;
     }
 
     .logos {
-        margin-top: 10px;
+        margin-top: 40px;
         display: flex;
         align-items: center;
         justify-content: space-around;
