@@ -119,7 +119,7 @@ h1 {
 
 .hero-button {
     margin-top: 80px;
-    border: none;
+    border: 1px solid var(--Almost-Black);
     outline: none;
     background-color: var(--Almost-Black);
     color: var(--Almost-White);
