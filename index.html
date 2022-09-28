@@ -74,22 +74,18 @@
             <a href="#">Blog</a>
           </div>
         </div> 
-        <a href="#">Careers</a>
-        <a href="#">Abolt</a>        
-      </div>
-
-      
+          <a href="#">Careers</a>
+          <a href="#">Abolt</a>        
+      </div>      
       <div class="nav-btns">
         <button>Login</button>
         <button>Register</button>
       </div>
-
-      </div>
-    </nav>
-      
-  </header>
-  <img src="./images/image-hero-mobile.png" alt="demo image" id="hero-img-mobile">
+    </nav>      
+  </header>  
+    
   <main class="hero">
+    <img src="./images/image-hero-mobile.png" alt="demo image" id="hero-img-mobile">
     <div class="hero-text">
       <h2 class="title-desktop">Make <br>remote work</h2>
       <h2 class="title-mobile">Make remote work</h2>
@@ -106,26 +102,11 @@
         </div>
     </div>
     <div class="img-container">
-      <img src="./images/image-hero-desktop.png" alt="demo image" id="hero-img">
-      
+      <img src="./images/image-hero-desktop.png" alt="demo image" id="hero-img">        
     </div>
   </main>
 
-  <script>
-    const buttonMenu = document.querySelector('.menu-img');
-
-    buttonMenu.addEventListener('click', ()=> {
-      document.querySelector('.mobile-nav').classList.add('show');
-      document.querySelector('.overlay').style.display = 'block';
-      document.body.classList.add('lock');
-    });
-
-    document.querySelector('.close-menu').addEventListener('click', ()=> {
-      document.querySelector('.mobile-nav').classList.remove('show');
-      document.querySelector('.overlay').style.display = 'none';
-      document.body.classList.remove('lock');
-    });
-  </script>
+    <script src="index.js"></script>
   
-</body>
+  </body>
 </html>
