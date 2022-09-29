@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Epilogue', sans-serif;
+    padding: 1px 1px;
 }
 
 h1 {
@@ -61,7 +62,7 @@ a:hover {
     outline: none;
     border: 1px solid var(--Medium-Gray);
     padding: 10px 25px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: transparent;
     color: var(--Medium-Gray);
     cursor: pointer;
@@ -260,6 +261,32 @@ a:hover {
         display: none;
     }
 
+    .nav-btns-mobile {
+        display: grid;
+        text-align: center;
+    }
+
+    .nav-btns-mobile button:nth-child(1) {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: var(--Medium-Gray);
+        cursor: pointer;
+        font-weight: 600;
+    }
+    
+    .nav-btns-mobile button:nth-child(2) {
+        outline: none;
+        border: 1px solid var(--Medium-Gray);
+        padding: 10px 25px;
+        border-radius: 15px;
+        background-color: transparent;
+        color: var(--Medium-Gray);
+        cursor: pointer;
+        margin-top: 15px;
+        font-weight: 600;
+    }
+
     .nav-ul {
         display: none;
     }
@@ -302,7 +329,7 @@ a:hover {
     }
 
     .hero-button {
-        margin: 60px 120px;
+        margin: 50px 119px;
     }
 
     .logos {
@@ -313,7 +340,7 @@ a:hover {
     }
 
     .logos img {
-        width: 70px;
+        width: 60px;
     }
 
     .overlay {
