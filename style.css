@@ -329,11 +329,12 @@ a:hover {
     }
 
     .hero-button {
-        margin: 50px 119px;
+        display: grid;
+        margin: 60px auto;
     }
 
     .logos {
-        margin-top: 40px;
+        margin-top: 100px;
         display: flex;
         align-items: center;
         justify-content: space-around;
