@@ -11,14 +11,14 @@ body {
 
 h1 {
     font-size: 70px;
-    width: 150px;
+    width: 106px;
     margin-left: 50px;
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 a {
@@ -147,11 +147,32 @@ a:hover {
     transition: all 1s;
 }
 
+.active {    
+    background: var(--Almost-White);       
+    cursor: pointer;    
+  }
+
 .dropdown {
+    font-family: 'Epilogue', sans-serif;
     position: relative;
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 30px;
     color: var(--Medium-Gray);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.dropdownCom {
+    font-family: 'Epilogue', sans-serif;
+    position: relative;
+    display: inline-block;
+    color: var(--Medium-Gray);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
 }
 
 .dropdown-content-features {
@@ -164,7 +185,8 @@ a:hover {
     width: 130px;
     z-index: 2;
     box-shadow: 0px 8px 16px 0 var(--Medium-Gray);
-    right: 16px;
+    left: 120px;
+    top: 72px;
 }
 
 .dropdown-content_company {
@@ -177,7 +199,8 @@ a:hover {
     width: 107px;
     z-index: 2;
     box-shadow: 0px 8px 16px 0 var(--Medium-Gray);
-    right: 5px;
+    right: 27px;
+    top: 43px;
 }
 
 .dropdown-content-features a {
@@ -208,14 +231,6 @@ a:hover {
 
 .dropdown-content-features img {
     margin-right: 10px;
-}
-
-.dropdown:hover .dropdown-content_company {
-    display: block;
-}
-
-.dropdown:hover .dropdown-content-features {
-    display: block;
 }
 
 @media screen and (min-width: 1440px) {
