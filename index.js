@@ -17,15 +17,17 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
-const buttonMenu = document.querySelector('.menu-img');
+let toggle = document.getElementById('toggle');
+let botaoMenu = document.querySelector(".box");
+let bg = document.querySelector(".bg");
+let menuLateral = document.querySelector(".nav-ul");
 
+toggle.onclick = function(){
+    toggle.classList.toggle('active');
+}
 
-      buttonMenu.addEventListener('click', ()=> {
-        document.querySelector('.mobile-nav').classList.add('show');
-        document.querySelector('.overlay').style.display = 'block';
-      });
-
-      document.querySelector('.close-menu').addEventListener('click', ()=> {
-        document.querySelector('.mobile-nav').classList.remove('show');
-        document.querySelector('.overlay').style.display = 'none';
-      });
+botaoMenu.addEventListener('click', (event)=> {
+  event.preventDefault();
+    menuLateral.classList.toggle('nav-ul-ativo');
+    bg.classList.toggle("bg-ativo");
+});
