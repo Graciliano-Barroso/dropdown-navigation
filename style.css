@@ -36,6 +36,10 @@ nav {
     justify-content: space-between;
 }
 
+.nav-btns-mobile {
+    display: none;
+}
+
 .box {
     display: flex;
     align-items: center;
