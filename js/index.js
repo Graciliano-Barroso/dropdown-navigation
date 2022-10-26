@@ -3,7 +3,7 @@ var i;
 
 for (i = 0; i < dropdown.length; i++) {
 
-  dropdown[i].addEventListener("click", function() {
+  dropdown[i].addEventListener('click', function() {
 
     this.classList.toggle("active");
 
@@ -18,15 +18,16 @@ for (i = 0; i < dropdown.length; i++) {
 }
 
 let toggle = document.getElementById('toggle');
-let botaoMenu = document.querySelector(".box");
+let botaoMenu = document.getElementById("toggle");
 let bg = document.querySelector(".bg");
-let menuLateral = document.querySelector(".nav-ul");
 
-toggle.onclick = function(){
+
+toggle.addEventListener('click', e => {
     toggle.classList.toggle('active');
-}
+});
 
-botaoMenu.addEventListener('click', ()=> {
+botaoMenu.addEventListener('click', e => {
+  let menuLateral = document.querySelector("#nav-ul");
     menuLateral.classList.toggle('nav-ul-ativo');
     bg.classList.toggle("bg-ativo");
 });
