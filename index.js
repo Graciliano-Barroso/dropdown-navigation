@@ -1,5 +1,5 @@
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+let dropdown = document.getElementsByClassName("dropdown-btn");
+let i;
 
 for (i = 0; i < dropdown.length; i++) {
 
@@ -7,7 +7,7 @@ for (i = 0; i < dropdown.length; i++) {
 
     this.classList.toggle("active");
 
-    var dropdownContent = this.nextElementSibling;
+    let dropdownContent = this.nextElementSibling;
 
     if (dropdownContent.style.display === "block") {
       dropdownContent.style.display = "none";
@@ -22,9 +22,9 @@ let botaoMenu = document.querySelector(".box");
 let bg = document.querySelector(".bg");
 let menuLateral = document.querySelector(".nav-ul");
 
-toggle.onclick = function(){
-    toggle.classList.toggle('active');
-}
+toggle.addEventListener('click', ()=>{
+  toggle.classList.toggle('active');
+});
 
 botaoMenu.addEventListener('click', (event)=> {
   event.preventDefault();
